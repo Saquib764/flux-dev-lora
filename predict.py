@@ -214,13 +214,13 @@ class Predictor(BasePredictor):
         width: int = Input(
             description="Width of the generated image in text-to-image mode. Only used when aspect_ratio=custom. Must be a multiple of 16 (if it's not, it will be rounded to nearest multiple of 16). Note: Ignored in img2img and inpainting modes.",
             ge=256,
-            le=1440,
+            le=2880,
             default=None,
         ),
         height: int = Input(
             description="Height of the generated image in text-to-image mode. Only used when aspect_ratio=custom. Must be a multiple of 16 (if it's not, it will be rounded to nearest multiple of 16). Note: Ignored in img2img and inpainting modes.",
             ge=256,
-            le=1440,
+            le=2880,
             default=None,
         ),
         num_outputs: int = Input(
